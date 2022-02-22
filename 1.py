@@ -2,6 +2,7 @@
 # 52张牌
 # 4个花色 黑桃（Spade），红桃（Heart），方块（Diamond），梅花（Club）
 # git: https://github.com/xwy964046872/poker
+# home test
 
 import random
 import copy
