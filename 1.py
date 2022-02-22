@@ -11,12 +11,20 @@ type = {'Spade':4, 'Heart':3, 'Diamond':2, 'Club':1}
 
 
 # 创建玩家
-n = 1
-player = []
+def gen_player(n):
+
+    n = 1
+    player = []
+
+
+
+    print('player',player)
+
+    return player
+
+
 
 desk = []  # 存储桌上5张牌
-
-print('player',player)
 
 pokers=[]
 for i in ['♥','♠','♦','♣']:
