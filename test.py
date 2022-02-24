@@ -1,12 +1,37 @@
-l = ['♥A', '♥2', '♥3']
 
-l1 = ['♥A']
+l = [[['♦', '2']], [['♥', '2']], [['♠', '4']], [['♠', '4']], [['♦', 'A']]]
 
-# l.remove('♥3')
-#
+#print(l[0][0][0])
 
-for i in l1:
-    print(i)
-    l.remove(i)
+z = []
+# high card
+for i in range(5):
 
-print(l)
+
+    z.append(l[i][0][1])
+
+print(z)
+
+p = []
+
+for c in z:
+    if c != 'A' and c != 'J' and c != 'Q' and c != 'K':
+        #z.remove(c)
+        c = int(c)
+        p.append(c)
+
+p.sort()
+
+countt = []
+for i in z:
+
+    countt.append(p.count(i))
+
+
+print(countt)
+
+if countt.count(2) == 2:
+    print('pair')
+
+elif countt.count(2) == 4:
+    print('two pairs')
