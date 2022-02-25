@@ -7,7 +7,7 @@
 
 import random
 import copy
-from n_of_a_kind import nfak
+from n_of_a_kind import noak
 
 #花色大小
 type = {'Spade':4, 'Heart':3, 'Diamond':2, 'Club':1}

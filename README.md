@@ -1,7 +1,7 @@
 # poker
 ## Card type：
 ### High card: 5张牌没有一样的，也组不成顺子
-### Pair：有一个对子，A最大，2最小
+### Pair：有一个对子，A最大，2最小 
 ### Two pairs：有两对
 ### Three of a kind: 有三张一样的
 ### Straight: 顺子 （7 8 9 10 J） 花色不同，A可以当最大的，也可以当最小的
