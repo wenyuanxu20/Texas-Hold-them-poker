@@ -3,22 +3,11 @@
 # 4个花色 黑桃（Spade），红桃（Heart），方块（Diamond），梅花（Club）
 # git: https://github.com/xwy964046872/poker
 # home test
-# Card type：
-# High card: 5张牌没有一样的，也组不成顺子
-# Pair：有一个对子，A最大，2最小
-# Two pairs：有两对
-# Three of a kind: 有三张一样的
-# Straight: 顺子 （7 8 9 10 J） 花色不同，A可以当最大的，也可以当最小的
-# Flush：同花，五张牌花色相同即可
-# Full house：葫芦，三条带一对
-# Four of a kind: 四条/金刚，4张一样的牌
-# Straight flush: 同花顺，顺子+同花色
-# Royal flush: 皇家同花顺，10-A的同花顺，三万分之一
-
 
 
 import random
 import copy
+from n_of_a_kind import nfak
 
 #花色大小
 type = {'Spade':4, 'Heart':3, 'Diamond':2, 'Club':1}
@@ -41,7 +30,7 @@ def ini_game():
 
     pokers=[]
     for i in ['♥','♠','♦','♣']:
-        for j in ['A','2','3','4','5','6','7','8','9','10','J','Q','K']:
+        for j in ['A','2','3','4','5','6','7','8','9','10','11','12','13']:
             pokers.append([i]+[j])
 
     print('新牌：', pokers)
