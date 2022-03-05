@@ -1,3 +1,5 @@
+import copy
+
 card_type = {
     'High card':0,
     'Pair':1,
@@ -16,7 +18,9 @@ card_type = {
 
 hand_card = [[['♦', 'A']], [['♦', '10']]]
 
-table_card = [[['♦', '9']], [['♥', '10']], [['♠', '10']], [['♠', '9']],[['♣', '5']]]
+table_card = [[['♦', '9']], [['♥', '10']], [['♠', '10']], [['♠', '9']]]#, [['♣', '5']]]
+
+comb_card = copy.deepcopy(table_card)
 
 # print(type(card_type))
 
@@ -25,4 +29,14 @@ table_card = [[['♦', '9']], [['♥', '10']], [['♠', '10']], [['♠', '9']],[
 # test = 'High card'
 #
 # print(card_type[test])
+
+
+for i in hand_card:
+    comb_card.append(i)
+
+print(comb_card)
+print(len(comb_card))
+
+
+
 

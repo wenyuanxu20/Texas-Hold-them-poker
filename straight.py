@@ -5,7 +5,7 @@ def is_straight(l):
     global p
     z = []
     res = []
-    # pair/two pairs/Three/Four
+
     for i in range(5):
         z.append(l[i][0][1])
 
@@ -17,7 +17,7 @@ def is_straight(l):
 
     for c in z:
         if c != 'A':
-            #z.remove(c)
+
             c = int(c)
             p.append(c)
 
@@ -34,16 +34,20 @@ def is_straight(l):
 
     if not 'A' in z:
         if sum(flush_card) == 4:
-            res.append('Straight!')
+            res.append(4)#('Straight!')
             #print('Straight!')
 
     elif sum(flush_card) == 3 and p[0] == 2:
-            res.append('Straight!')
+            res.append(4)#('Straight!')
             #print('Straight!')
 
     else:
         if sum(flush_card) == 3 and p[3] == 13:
-            res.append('Straight!')
+            res.append(4)#('Straight!')
             #print('Straight!')
 
-    return res,p
+    return res, p
+
+
+x = is_straight(l)
+print(x)
